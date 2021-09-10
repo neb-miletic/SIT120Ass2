@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Movies</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="navbar">
+        <a href="#contact">Contact</a>
+        <a href="#TvSeries">TV Series</a>
+        <a href="#movies">Movies</a>
+        <a class="active" href="#home">Home</a>
+      </div>
+    </div>
+
+    <div class="text">
+      <h1>The Best Movies</h1>
+      <p>
+        This is the web page that I made to show the tools we need to use to
+        make the page responsive. I will add some lorem ipsum to make it longer.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil atque
+        adipisci enim eligendi voluptates, illum ipsa veritatis cumque saepe
+        totam laudantium iusto repellendus necessitatibus ut ducimus magnam
+        aliquid tempore similique?
+      </p>
+    </div>
+    <div class="form">
+      <div class="card">
+        <img src="Game Of Thrones.jpeg" alt="Avatar" style="width: 100%" />
+        <div class="container">
+          <h4><b>Game of Thrones</b></h4>
+          <p>Category: Fantasy</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Game Of Thrones.jpeg" alt="Avatar" style="width: 100%" />
+        <div class="container">
+          <h4><b>Game of Thrones</b></h4>
+          <p>Category: Fantasy</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Game Of Thrones.jpeg" alt="Avatar" style="width: 100%" />
+        <div class="container">
+          <h4><b>Game of Thrones</b></h4>
+          <p>Category: Fantasy</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Game Of Thrones.jpeg" alt="Avatar" style="width: 100%" />
+
+        <div class="container">
+          <h4><b>Game of Thrones</b></h4>
+          <p>Category: Fantasy</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="api">
+      <h2>Play You Tube video</h2>
+
+      <iframe
+        width="420"
+        height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY"
+      >
+      </iframe>
+    </div>
+
+    <div class="api">
+      <h2>Drag and Drop</h2>
+      <p>Drag the image back and forth between the two div elements.</p>
+
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img
+          id="draggable"
+          src="Game Of Thrones.jpeg"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="drag1"
+          width="270"
+          height="140"
+        />
+      </div>
+
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

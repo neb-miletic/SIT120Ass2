@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+}
+iframe {
+  margin-left: 22.2rem;
+}
+#div1,
+#div2 {
+  justify-items: right;
+  width: 20vw;
+  height: 10vw;
+  margin: 10px;
+  margin-left: 24.5rem;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.api {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+  padding: 2rem;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  padding: 14px;
+}
+
+.navbar a {
+  float: right;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-size: large;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: yellowgreen;
+  color: whitesmoke;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 13vw;
+  margin: 2rem;
+  text-align: center;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+@media screen and (max-width: 726px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  iframe {
+    margin-left: 15%;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .navbar a {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  #div1,
+  #div2 {
+    margin-left: 35%;
+  }
+  #draggable {
+    width: 100%;
+    height: 100%;
+  }
+}

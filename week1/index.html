@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme shop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .unordered {
+          color: blueviolet;
+          font-size: x-large;
+        }
+        .text {
+            padding:20px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+         <a class="active" href="#home">Home</a>
+         <a href="#shop">Shop</a>
+         <a href="#contact">Contact</a>
+         <a href="#about">About</a>
+    </div>
+
+    <h1 style="color: blueviolet; text-align: center;">This is Acme Shop!</h1>
+  <div class="row">
+    <div class="column1">
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tenetur architecto porro cupiditate tempora rem facilis soluta accusantium officia repellendus.
+            Eaque quibusdam debitis incidunt sapiente illum omnis saepe tempora soluta inventore.
+        </p>
+
+        <img class="text" src="Game Of Thrones.jpeg" alt=""></div>
+    </div>
+    <div class="column2"> 
+    <ul>
+        <li class="unordered">Banana</li>
+        <li class="unordered">Orange</li>
+        <li class="unordered">Apple</li>
+    </ul>
+
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+ 
+    <label for="movies" class="movies">Pick a movie:</label>
+    <select class="moviesSelect" name="movielist" id="movies">
+        <option  value="crime">Crime</option>
+        <option value="thriler">Thriler</option>
+        <option value="drama">Drama</option>
+    </select>
+
+    <div id="color" style="width:150px; height: 150px; background-color: cornflowerblue; margin: 50px;"></div>
+
+<button style="margin: 2rem;" type="button" onclick="document.getElementById('color').style.backgroundColor ='red'">
+    Click me to change the color!</button>
+</div>
+  
+<section id="app">
+
+    <h1>{{title}}</h1>
+    <div v-for="todoItem in todoLists">
+        <input type="checkbox"
+        class="check-list"
+        v-on:change="toggleItem(todoItem)"
+        v-bind:checked="todoItem.checked"
+        />
+        
+        <del class="gray" v-if="todoItem.checked">
+            {{todoItem.text}}
+        </del>
+        <span v-else>
+            {{todoItem.text}}
+        </span>
+    </div>
+</section>
+
+
+  
+   
+</body>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="Todo.js"></script>
+</html>

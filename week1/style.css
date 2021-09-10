@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  padding: 14px;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  font-size: large;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: yellowgreen;
+  color: whitesmoke;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  background-color: lightgray;
+}
+.column2 {
+  float: right;
+  width: 50%;
+  background-color: gray;
+}
+
+.movies {
+  padding: 50px;
+}
+
+.moviesSelect {
+  width: 5rem;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Week 5</title>
+</head>
+<body>
+
+
+
+
+    <div id="app">
+        <div class="navbar">
+            <navbar-item
+            v-for="link in links"
+            :key="link.id"
+            :link="link.link"
+            ></navbar-item>
+        </div>
+
+        <div class="form">
+            <card
+            
+            v-for = "movie in movies"
+            :key = "movie.id"
+            :name="movie.name"
+            :category="movie.category"
+            :photo="movie.photo"
+            ></card>
+
+        </div>
+</div>
+    
+</body>
+<script src="https://unpkg.com/vue@next"></script>
+    <script src=app.js></script>
+</html>

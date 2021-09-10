@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Week 4</title>
+</head>
+<body>
+   
+
+    <div id="app" class="box">
+       <h1>{{ message }} </h1>
+      
+    
+          <h2 id="app">{{ count }}</h2>
+          <button @click.prevent="incrementCounter"> Count up</button>
+          <p v-if="count > 5">If you keep going to 10, you will get a piece of fruit! :)</p>
+          <p v-if="count > 8"> Keep going!!!</p>
+          <p v-if="count > 10">{{ items[0] }}</p>
+          <p v-if="count>11">Keep going to 15 for a next fruit!!!</p>
+          <p v-show="count>14 && count < 16">{{ items[1] }}</p>
+          <p v-if="count > 15">Next click and you'll get a fruit salad!</p>
+          <p v-for="item in items">
+              <p v-if="count>16">
+                 {{ items }}
+              </p>
+          </p>
+        
+
+
+
+           
+             
+          
+
+          <button @click.prevent="counterZero"> Reset</button>
+       
+    </div>
+
+
+    
+        
+        
+
+    
+
+
+
+      <script src=App.js></script>
+</body>
+
+
+</html>
